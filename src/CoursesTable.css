@@ -1,0 +1,68 @@
+/* General Table Container */
+.course-table-container {
+  padding: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+/* Table Styling */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  table-layout: auto; /* Ensure the table can grow */
+}
+
+/* Table Header and Data Styling */
+.courses-table th,
+.courses-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table Header */
+.courses-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Zebra Stripes for Rows */
+.courses-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect for Rows */
+.courses-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Center Align Text in Data Cells */
+.courses-table td {
+  text-align: center;
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 768px) {
+  .courses-table {
+    min-width: 600px; /* Adjust min-width for smaller screens */
+  }
+
+  .courses-table th,
+  .courses-table td {
+    padding: 8px; /* Slightly smaller padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-table {
+    min-width: 400px; /* Further adjust min-width for very small screens */
+  }
+
+  .courses-table th,
+  .courses-table td {
+    padding: 6px; /* Further reduce padding for very small screens */
+    font-size: 12px; /* Reduce font size for very small screens */
+  }
+}

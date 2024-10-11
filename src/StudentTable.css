@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.styled-table td {
+  border-bottom: 1px solid #dddddd; /* Existing border */
+  font-size: 1rem; /* Existing font size */
+  color: #333; /* Darker text color for better readability */
+  line-height: 1.5; /* Increased line height for better spacing */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  font-weight: 100;
+}
+
+/* Hover effect for table data */
+.styled-table tr:hover td {
+  background-color: #e7f0ff; /* Light background on row hover */
+}
+
+/* Additional responsive styles for table data */
+@media (max-width: 768px) {
+  .styled-table td {
+    font-size: 0.85rem; /* Smaller font size on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .styled-table td {
+    font-size: 0.8rem; /* Even smaller font size on small screens */
+  }
+}
+
+.search-container {
+  position: relative; /* Positioning context for the icon */
+  width: 100%; /* Use full width for responsiveness */
+  max-width: 300px; /* Set a maximum width */
+  margin: 20px auto; /* Centering the container */
+}
+
+.search-bar {
+  width: 100%; /* Full width of the container */
+  padding: 10px 40px 10px 10px; /* Padding to the left for icon space */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 16px; /* Font size */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.search-icon {
+  position: absolute; /* Absolute positioning */
+  right: 10px; /* Distance from the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  color: #aaa; /* Color of the icon */
+  pointer-events: none; /* Prevents interaction with the icon */
+  font-size: 18px; /* Adjust icon size if needed */
+}
+
+/* Ensure the search bar is responsive on smaller screens */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%; /* Allow it to take full width */
+    margin: 10px 0; /* Adjust margin for mobile */
+  }
+  .search-bar {
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center the contents */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    width: 80%; /* Responsive width on smaller screens */
+  }
+}
+
+/* Table Container */
+.table-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.loading-spinner {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 20px;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.styled-table td {
+  border-bottom: 1px solid #dddddd; /* Existing bottom border */
+  border-right: 1px solid #f0f0f0; /* Light right border for separation */
+  font-size: 0.95rem;
+}
+
+.styled-table th {
+  border-right: 1px solid #f0f0f0; /* Light right border for header cells */
+}
+
+/* Remove the right border from the last child to avoid double borders */
+.styled-table td:last-child,
+.styled-table th:last-child {
+  border-right: none;
+}
+/* Style for alternating columns */
+.styled-table td:nth-child(even) {
+  background-color: #fafafa; /* Light grey for even columns */
+}
+
+/* You can adjust this for odd columns as well if needed */
+.styled-table td:nth-child(odd) {
+  background-color: #fefefe; /* Subtle white background for odd columns */
+}
+.styled-table tr {
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.styled-table tr:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow on row hover */
+}
+
+/* Styled Table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #007bff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tr:hover {
+  background-color: #e1e7ff;
+}
+
+.styled-table td {
+  border-bottom: 1px solid #dddddd;
+  font-size: 0.95rem;
+}
+
+/* Status Label */
+.status-label {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  min-width: 120px; /* Ensure all status labels have equal width */
+}
+
+.status-label.completed {
+  background-color: #28a745;
+}
+
+.status-label.travelled {
+  background-color: #17a2b8;
+}
+
+.status-label.not-completed {
+  background-color: #ffc107;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Dropdown */
+.status-dropdown {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .styled-table th,
+  .styled-table td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .table-container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .styled-table th,
+  .styled-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .status-label {
+    min-width: 100px; /* Adjust min-width for smaller devices */
+  }
+}

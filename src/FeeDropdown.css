@@ -1,0 +1,31 @@
+.fee-dropdown-container {
+  margin-bottom: 15px;
+}
+
+.fee-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fee-dropdown {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.fee-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.fee-dropdown option {
+  padding: 10px;
+  font-size: 16px;
+}

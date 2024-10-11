@@ -1,0 +1,170 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.login-page {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  align-items: stretch;
+  justify-content: center; /* Center content horizontally */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Add this to your CSS file to style the notifications */
+.Toastify__toast--success {
+  background: #4caf50; /* Green for success */
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: #f44336; /* Red for error */
+  color: white;
+}
+
+.login-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for form section */
+}
+
+.login-content {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  background-color: white; /* White background for better contrast */
+}
+
+.logo {
+  width: 120px; /* Adjust the width to make the logo smaller */
+  height: auto; /* Maintain the aspect ratio */
+  display: block;
+  margin: 0 auto 20px; /* Center the logo and add some margin at the bottom */
+}
+
+h2 {
+  text-align: center;
+  color: #2b4ba0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch targets */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+/* Styling for radio buttons */
+.role-selection {
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-option input[type='radio'] {
+  margin-right: 10px;
+  transform: scale(1.5); /* Make the radio buttons larger */
+}
+
+.radio-option label {
+  display: block; /* Ensures the label behaves like a block */
+  width: 150px; /* Fixed width to align all labels */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  font-size: 18px; /* Increase font size for better readability */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b4ba0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.submit-btn:hover {
+  background-color: #1e3a7d;
+}
+
+a {
+  color: #2b4ba0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-image-section {
+  flex: 1;
+  display: flex; /* Show image section on larger screens */
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.login-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-image-section {
+    display: none; /* Hide the image on smaller screens */
+  }
+}
+
+/* Scrollable on small screens */
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    overflow: auto; /* Allow scrolling on small devices */
+  }
+
+  .login-page {
+    height: auto; /* Allow content to adjust height naturally */
+    padding: 20px;
+    display: block; /* Stack elements vertically on small devices */
+  }
+}
+
+/* Main login container */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

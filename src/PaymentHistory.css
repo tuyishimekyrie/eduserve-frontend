@@ -1,0 +1,70 @@
+.payment-history-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.payment-history-table th,
+.payment-history-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.payment-history-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.payment-history-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Stripe effect */
+}
+
+.payment-history-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.even-row {
+  background-color: #f2f2f2;
+}
+
+.odd-row {
+  background-color: #ffffff;
+}
+
+/* Download Button Styling */
+.download-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .payment-history-table {
+    font-size: 12px;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,33 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.dark-mode .dashboard-content {
+  background-color: #2a2b36;
+  color: white;
+}
+
+.dashboard-container {
+  display: flex; /* Flexbox for horizontal alignment */
+  height: 100vh; /* Full height */
+}
+
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #2c3e50; /* Sidebar background color */
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  flex-grow: 1; /* Takes up remaining space */
+  padding: 20px;
+  background-color: #ecf0f1; /* Background for the content area */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}

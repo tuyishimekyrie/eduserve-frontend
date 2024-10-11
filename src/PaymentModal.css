@@ -1,0 +1,78 @@
+.payment-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Ensure the modal is on top */
+}
+
+/* Notification Styles */
+.notification-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.success-notification {
+  background-color: #4caf50; /* Success green */
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.payment-modal {
+  background: white; /* Background color of the modal */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  max-width: 500px; /* Max width for the modal */
+  width: 100%; /* Full width for smaller screens */
+  position: relative; /* Relative positioning for the close button */
+  z-index: 1001; /* Higher z-index than overlay */
+}
+
+.close-modal-btn {
+  position: absolute; /* Absolute position to place in the corner */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  background: transparent; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 20px; /* Font size for the icon */
+}
+
+@media (max-width: 768px) {
+  .payment-modal {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .close-modal-btn {
+    font-size: 1.2rem; /* Smaller close button for very small screens */
+  }
+}
